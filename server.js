@@ -14,18 +14,6 @@ app.set('view engine', 'handlebars');
 app.set('views', './templates');
 
 app.use ('/subjects',subjectRouter);
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(process.env.port, () => {
     console.log(`started the application on http://localhost:${process.env.port}`);
 })
