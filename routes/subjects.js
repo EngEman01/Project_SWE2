@@ -1,10 +1,12 @@
 import { Router } from "express"
-import { index } from "../Controllers/subject_controller.js";
-import department from "../models/departments.js";
-import subject from "../models/subject.js";
+import { create, index } from "../Controllers/subject_controller.js";
+
 
 
 const router = new Router();
 
 router.get('/',index);
+router.get('/create',create);
+router.post('/' , store);
+
 export default router;
