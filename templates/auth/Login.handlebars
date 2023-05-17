@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+
+    <div class="log">
+
+        <form method="post" name="myform" onsubmit="return tast();" action="admin">
+
+
+            <center>
+                <h1>Login</h1>
+            </center>
+            <br>
+
+            <label id="em" for="em">Email</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="in" type="email" id="em" name="email" minlength="8"><br> <br>
+            {{!-- required --}}
+            <label id="ps" for="pass">password</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="in" type="password" id="pass" name="pass" pattern="[A-Za-z0-9]{9}"><br> <br>
+
+            <br>
+
+            <label id="m" for="m">Admin</label>
+            <input id="choose" type="radio">
+
+            <label id="fm" for="fm">Doctor</label>
+            <input id="choose" type="radio">
+
+            <label id="fm" for="fm">Student</label>
+            <input id="choose" type="radio">
+
+            <br><br>
+
+            <center>
+                <input class="su" type="submit" value="Login" onclick="admin();">
+            </center>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>

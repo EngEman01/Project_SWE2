@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/accountStudent.css">
+</head>
+
+<body>
+
+    <div class="log">
+
+
+        <form method="POST" action="/">
+
+
+            <center>
+                <h1>Create Student's Account</h1>
+            </center>
+            <br>
+
+            <label id="fname" for="fname">Username</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input id="in" type="text" id="fname" name="username" required><br> <br>
+
+
+            <label id="em" for="em">Email</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; 
+            <input id="in" type="email" id="em" name="email" minlength="8"><br> <br>
+
+
+            <label id="fname" for="fname">Academic Number</label> &nbsp; &nbsp; 
+            <input id="in" type="text" id="fname" name="AcademicNumber" required><br> <br>
+
+            {{!-- required --}}
+
+            <label id="ps" for="pass">password</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+            <input id="in" type="password" id="pass" name="password" ><br> <br>
+
+            <br>
+
+            <center>
+                <input class="su" type="submit" value="Save">
+            </center>
+        </form>
+
+    </div>
+</body>
+
+</html>
