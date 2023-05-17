@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { create, index } from "../Controllers/subject_controller.js";
+import { create, index,store } from "../Controllers/subject_controller.js";
 
 
 

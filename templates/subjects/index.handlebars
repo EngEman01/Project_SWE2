@@ -1,8 +1,20 @@
 <h1>Subjects</h1>
 
-{{#each subjects}}
+{{!-- {{#each subjects}}
 
 <h2>{{ name }}</h2>
 <h5>Code:  {{ code }}</h5>
 
-{{/each}}
+{{/each}} --}}
+
+        <label for="">Subjects</label>
+
+        <select name='subjects' id='' class='select'>
+            {{#each subjects}}
+
+            <option value="{{ _id }}">{{ name }}</option>
+
+
+            {{/each}}
+
+        </select>

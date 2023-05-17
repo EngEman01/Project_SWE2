@@ -1,42 +1,45 @@
-<h1>creat new subject</h1>
+<h1>create new subject</h1>
 
 <form action="/subjects" method="post">
-    
-<div>
-    <label for="">Name</label>
 
-    <input type='text'class='form-control' name="name" />
+    <div>
+        <label for="">Name</label>
 
-</div>
+        <input type='text' class='form-control' name="name" />
 
-<div>
-    <label for="">code</label>
+    </div>
 
-    <input type='text'class='form-control' name="code" />
+    <div>
+        <label for="">code</label>
 
-</div>
+        <input type='text' class='form-control' name="code" />
 
-<div>
-    <label for="">department</label>
+    </div>
 
-    <select name='department' id='' class='form-select'>
-      {{#each departments}}  
+    <div>
+        <label for="">department</label>
 
-      <option value="{{_id}}">{{name}}</option>  
+        <select name='department' id='' class='form-select'>
+            {{#each departments}}
 
-       {{/each}}     
-     
+            <option value="{{_id}}">{{name}}</option>
 
-    </select>
 
-</div>
+            {{/each}}
+            <option value="cs">cs</option>
+            <option value="it">it</option>
+            <option value="is">is</option>
 
-<div class="mt-3">
-<button class="btn btn-success"type="submit">
-    save
-</button>
+        </select>
 
-</div>
+    </div>
+
+    <div class="mt-3">
+        <button class="btn btn-success" type="submit">
+            save
+        </button>
+
+    </div>
 
 
 
