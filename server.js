@@ -2,11 +2,12 @@ import express from "express";
 import { engine } from 'express-handlebars';
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
-import subjectRouter from './routes/subjects.js'
-import departments from "./models/departments.js";
+import subjectRoutes from './routes/subjectsRoutes.js'
+import department from "./models/departments.js";
 import subjects from "./models/subject.js";
 import doctorRoutes from "./routes/doctorRoutes.js"
 import studentRoutes from "./routes/studentRoutes.js"
+import departmentsRoutes from "./routes/departmentsRoutes.js";
 
 dotenv.config();
 
@@ -21,9 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 
-app.get('/create', (req, res) => {
-    res.render("./subjects/create.handlebars")
-})
+
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -31,9 +30,12 @@ app.set('views', './templates');
 
 app.use('/', studentRoutes)
 
-app.use("/", doctorRoutes);
+app.use('/', doctorRoutes);
 
-app.use('/subjects', subjectRouter);
+app.use('/subjects', subjectRoutes);
+
+app.use('/departments', departmentsRoutes);
+
 
 app.listen(process.env.port, () => {
     console.log(`started the application on http://localhost:${process.env.port}`);

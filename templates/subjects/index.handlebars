@@ -1,20 +1,14 @@
 <h1>Subjects</h1>
 
-{{!-- {{#each subjects}}
+<div class="my-2">
+    <a href="subjects/create">Add a New Subject</a>
+</div>
+{{#each subjects}}
+<div>
+    <a href='/subjects/{{_id}}'>
+        {{ name }}
+    </a>
+</div>
+{{/each}}
 
-<h2>{{ name }}</h2>
-<h5>Code:  {{ code }}</h5>
-
-{{/each}} --}}
-
-        <label for="">Subjects</label>
-
-        <select name='subjects' id='' class='select'>
-            {{#each subjects}}
-
-            <option value="{{ _id }}">{{ name }}</option>
-
-
-            {{/each}}
-
-        </select>
+        

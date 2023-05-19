@@ -10,6 +10,11 @@ const subject = new Schema ({
         type: String,
         required: false,
     },
+    department: {
+        type: Schema.Types.ObjectId,
+        required: false,
+        ref:'department'
+    },
 }, { timestamps: true, } )
 
 export default model ('subject' ,subject);

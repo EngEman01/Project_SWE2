@@ -1,7 +1,7 @@
 import { Schema ,model } from "mongoose";
 
 
-const departments = new Schema ({
+const department = new Schema ({
     name: {
         type: String,
         required : true,
@@ -12,4 +12,4 @@ const departments = new Schema ({
     },
 }, { timestamps: true, } )
 
-export default model ('departments' ,departments);
+export default model ('department' ,department);
