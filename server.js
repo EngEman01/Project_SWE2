@@ -8,6 +8,7 @@ import subjects from "./models/subject.js";
 import doctorRoutes from "./routes/doctorRoutes.js"
 import studentRoutes from "./routes/studentRoutes.js"
 import departmentsRoutes from "./routes/departmentsRoutes.js";
+import methodOverride from 'method-override';
 
 dotenv.config();
 
@@ -20,6 +21,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'))
+
+app.use(methodOverride('_method'))
 
 
 

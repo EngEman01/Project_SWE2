@@ -1,0 +1,13 @@
+body {
+
+    background-image: url('/image/bgdoctor.jpg');
+    /* background-repeat: repeat; */
+    background-size: 1600px 750px;
+
+}
+
+.h1 {
+    color: white;
+    
+    
+}
